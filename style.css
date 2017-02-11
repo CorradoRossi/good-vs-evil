@@ -1,0 +1,280 @@
+@import url("https://dl.dropboxusercontent.com/u/2821967/fonts/proxima-nova.css");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+/* Sitewide */
+
+@media (min-width: 500px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+html, body {
+  height: 100%;
+  min-height: 18em;
+}
+
+/* End Sitewide */
+
+
+
+/* Begin First Icon Set */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#icony, #icons {
+  font-size: 18px;
+}
+#icony, #icons {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  font-weight: 600;
+  background: none;
+}
+
+#icony {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#icony li a {
+  display: block;
+  margin-left: -2px;
+  height: 60px;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+  background: #FFF;
+  margin-bottom: 1em;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  color: #2980b9;
+  text-decoration: none;
+  line-height: 60px;
+  position: relative;
+}
+#icony li a:hover {
+  cursor: pointer;
+  width: 180px;
+  color: #fff;
+}
+#icony li a:hover span {
+  left: 0;
+}
+#icony li a span {
+  padding: 0 30px 0 15px;
+  position: absolute;
+  left: -120px;
+  -webkit-transition: left .4s ease;
+  transition: left .4s ease;
+}
+#icony li a i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+#icony li .friendly {
+  background: #fff;
+  border-color: #000;
+  color:  #000;
+}
+#icony li .friendly:hover {
+  background: #000;
+}
+#icony li .github {
+  background: #fff;
+  border-color: #000;
+  color:  #000;
+}
+#icony li .github:hover {
+  background: #000;
+}
+#icony li .spotify {
+  background: #fff;
+  border-color: #000;
+  color:  #000;
+}
+#icony li .spotify:hover {
+  background: #000;
+}
+#icony li .skype {
+  background: #fff;
+  border-color: #000;
+  color: #000;
+}
+#icony li .skype:hover {
+  background: #000;
+}
+
+/* entypo */
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+#icons {
+  text-align: justify;
+  position: absolute;
+  top: 80%;
+  left: -40px;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+#icons a {
+  color: #4183D7;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px dotted #4183D7;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#icons a:hover {
+  color: #D2527F;
+}
+
+/* End First Icon Set */
+
+
+
+
+
+/* Begin Actual Site */
+
+.evil-side {
+  background-color: black;
+}
+
+.good-side {
+  background-color: white;
+}
+
+.split-pane {
+  padding-top: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50%;
+  min-height: 9em;
+  font-size: 2em;
+  font-family: "proxima-bold";
+}
+@media(min-width: 500px) {
+  .split-pane {
+    padding-top: 2em;
+    height: 100%;
+  }
+}
+.split-pane > div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.split-pane > div .text-content-good {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  color: black;
+}
+.split-pane > div .text-content-good .big {
+  font-size: 2em;
+  color: black;
+}
+.split-pane > div .text-content-evil {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  color: white;
+}
+.split-pane > div .text-content-evil .big {
+  font-size: 2em;
+  color: white;
+}
+.split-pane > div img {
+  height: 1.3em;
+}
+
+/* Responsive Small */
+
+@media (max-width: 500px) {
+  .split-pane > div img {
+    display:none;
+  }
+
+#icons {
+  top: 51%;
+}
+
+}
+.split-pane a.button-good {
+  font-family: "proxima-regular";
+  background: none;
+  border: 1px solid black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 15em;
+  padding: 0.7em;
+  font-size: 0.5em;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+	cursor: pointer;
+}
+.split-pane a.button-good:hover {
+  text-decoration: none;
+  background-color: black;
+  border-color: black;
+	cursor: pointer;
+}
+.split-pane a.button-evil {
+  font-family: "proxima-regular";
+  background: none;
+  border: 1px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 15em;
+  padding: 0.7em;
+  font-size: 0.5em;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+	cursor: pointer;
+}
+.split-pane a.button-evil:hover {
+  text-decoration: none;
+  background-color: white;
+  border-color: white;
+	cursor: pointer;
+}
+.split-pane a.button-good:hover {
+  color: white;
+}
+.split-pane a.button-evil:hover {
+  color: black;
+}
+.big {
+  font-size: 2em;
+}
