@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  background: #ff97e6;
+}
+body,
+body > * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+* {
+  transition: all .3s ease 0s;
+}
+/* Background colours */
+div + div article:nth-child(1) {
+  background: #7f97e6;
+}
+div + div article:nth-child(2) {
+  background: #9f97e6;
+}
+div + div article:nth-child(3) {
+  background: #bf97e6;
+}
+div + div article:nth-child(4) {
+  background: #df97e6;
+}
+div + div article:nth-child(5), div + div {
+  background: #ff97e6;
+}
+/* Main layout */
+html,
+body,
+div + div {
+  width: 100vw;
+  height: 100vh;
+}
+div + div {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+/* Articles */
+div + div article {
+  flex: initial;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  position: relative;
+}
+/* Big Headings */
+body > div:first-child {
+  position: fixed;
+  bottom: 8vh;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: .5rem;
+  z-index: 3;
+}
+body > div:first-child h1,
+body > div:first-child h2 {
+  margin: 0;
+  padding: 0;
+}
+/* Hover interaction */
+div + div:hover article {
+  flex: initial;
+  width: 12%;
+}
+div + div article:hover {
+  width: 52%;
+}
+article > div {
+  opacity: 0;
+  transition: opacity .2s ease 0;
+}
+div + div article:hover > div {
+  opacity: 1;
+  transition: opacity .3s ease .3s;
+}
+/* navigation */
+div + div article > h2 {
+  bottom: 2vh;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 3vh;
+}
+/* Article layouts */
+article div {
+  text-align: left;
+  width: 58vw;
+  overflow-y: auto;
+}
+article div p,
+article div div h2,
+article div h3 {
+  text-align: left;
+  margin: 0 0 1em 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+}
+article div p {
+  font-size: 2.5vh;
+  width: 45vw;
+}
+
+#btn-1 {
+  margin-left: -72vh;
+  background-color: #bf97e6;
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#btn-1 span {
+  color: #fff;
+  padding-left: 2px;
+  transform: scaleX(.6);
+  letter-spacing: 2px;
+  transform-origin: center;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+#btn-1:before,
+#btn-1:after {
+  content: '';
+  background: #ff97e6;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.86, 0.15, 0.15, 0.86);
+}
+#btn-1:before {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+#btn-1:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+#btn-1:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+#btn-1:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+#btn-1:hover span {
+  color: #243056;
+}
+
+#btn-2 {
+  margin-left: 72vh;
+  background-color: #bf97e6;
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+#btn-2 span {
+  color: #fff;
+  padding-left: 2px;
+  transform: scaleX(.6);
+  letter-spacing: 2px;
+  transform-origin: center;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+#btn-2:before,
+#btn-2:after {
+  content: '';
+  background: #7f97e6;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.86, 0.15, 0.15, 0.86);
+}
+#btn-2:before {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+#btn-2:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+#btn-2:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+#btn-2:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+#btn-2:hover span {
+  color: #243056;
+}
+
+@media (max-width: 900px) {
+  #btn-1, #btn-2 {
+    margin-top: 4vh;
+    padding-bottom: 1vh;
+    margin-left: -58%;
+    position: relative;
+  }
+  #btn-2 {
+    margin-top: 4vh;
+    padding-bottom: 1vh;
+    margin-left: 0%;
+    position: relative;
+  }
+  body > div:first-child h1,
+  body > div:first-child h2 {
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+  }
+  div + div article {
+    padding: 2vh 3vw;
+  }
+  div + div article > h2 {
+    transform: rotate(90deg);
+    bottom: 23vh;
+    min-width: 12em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: 0 0 0;
+    opacity: 1;
+  }
+  div + div article:hover > h2 {
+    opacity: 0;
+  }
+  article div p {
+    font-size: 2vh;
+    width: 50vw;
+  }
+  article div {
+    max-height: calc(72%);
+    overflow-y: auto;
+  }
+  div + div:hover article {
+    flex: initial;
+    width: 10%;
+  }
+  div + div article:hover {
+    width: 60%;
+  }
+}

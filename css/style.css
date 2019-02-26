@@ -1,6 +1,16 @@
-@import url("https://dl.dropboxusercontent.com/u/2821967/fonts/proxima-nova.css");
+
 @import url("http://weloveiconfonts.com/api/?family=entypo");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+@font-face {
+    font-family: 'Proxima Nova Black';
+    src: url('fonts/Proxima-Nova-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('fonts/Proxima-Nova-Bold.woff2') format('woff2');
+}
 
 /* Sitewide */
 
@@ -84,12 +94,12 @@ html, body {
   font-size: 1.5em;
 }
 
-#icony li .friendly {
+#icony li .motorossi {
   background: #fff;
   border-color: #000;
   color:  #000;
 }
-#icony li .friendly:hover {
+#icony li .motorossi:hover {
   background: #000;
 }
 #icony li .github {
@@ -100,20 +110,20 @@ html, body {
 #icony li .github:hover {
   background: #000;
 }
-#icony li .spotify {
+#icony li .love {
   background: #fff;
   border-color: #000;
   color:  #000;
 }
-#icony li .spotify:hover {
+#icony li .love:hover {
   background: #000;
 }
-#icony li .skype {
+#icony li .blog {
   background: #fff;
   border-color: #000;
   color: #000;
 }
-#icony li .skype:hover {
+#icony li .blog:hover {
   background: #000;
 }
 
@@ -126,7 +136,7 @@ html, body {
 #icons {
   text-align: justify;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: -40px;
   -webkit-transform: translate(-50%, -60%);
           transform: translate(-50%, -60%);
@@ -169,9 +179,9 @@ html, body {
   height: 50%;
   min-height: 9em;
   font-size: 2em;
-  font-family: "proxima-bold";
+  font-family: "Proxima Nova Bold";
 }
-@media(min-width: 500px) {
+@media(min-width: 768px) {
   .split-pane {
     padding-top: 2em;
     height: 100%;
@@ -209,7 +219,7 @@ html, body {
 
 /* Responsive Small */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .split-pane > div img {
     display:none;
   }
@@ -220,7 +230,7 @@ html, body {
 
 }
 .split-pane a.button-good {
-  font-family: "proxima-regular";
+  font-family: "Proxima Nova Black";
   background: none;
   border: 1px solid black;
   -moz-border-radius: 5px;
@@ -245,7 +255,7 @@ html, body {
 	cursor: pointer;
 }
 .split-pane a.button-evil {
-  font-family: "proxima-regular";
+  font-family: "Proxima Nova Bold";
   background: none;
   border: 1px solid white;
   -moz-border-radius: 5px;
